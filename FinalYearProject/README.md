@@ -15,7 +15,7 @@ Python 3.7
 #Python Library Requirements:
 PySAT @ https://pysathq.github.io/installation.html
 NumPy @ https://numpy.org/
-Matplotlib @ matplotmib.org
+Matplotlib @ https://matplotlib.org
 
 ##Running the Code:
 

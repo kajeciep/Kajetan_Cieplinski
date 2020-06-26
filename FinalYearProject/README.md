@@ -1,18 +1,18 @@
-### Final Year Project
+# Final Year Project
 
 This code was used for testing in my final year project of my computer science MSci at Birmingham. The project explored how self-adaptation of
 selection rates in Evolutionary Algorithms, and measures its effects on optimisation. This is done through a genetic algorithm, where the population
 is able to move to other sub-populations with different selection rates, by mutating its island gene.
 
 
-### Instructions for use:
+# Instructions for use:
 
 ## Requirements
 
-# Language Requirements:
+### Language Requirements:
 Python 3.7
 
-# Python Library Requirements:
+### Python Library Requirements:
 PySAT @ https://pysathq.github.io/installation.html
 NumPy @ https://numpy.org/
 Matplotlib @ https://matplotlib.org
@@ -74,7 +74,7 @@ these parameters are left unspecified, default values will be used.
 
 
 
-# Example of setting own parameters:
+### Example of setting own parameters:
 
 $ python sasiga.py -op PLOZ -gt 1 -mr 0.01 -sru 0.8 -srl 0.3 -pop 200 -gs 20 -e 10 -g 200 -l 30 -i 10
 

@@ -1,0 +1,11 @@
+*.class
+*.xml
+.project
+*.iml
+/out
+/bin
+Java Game/out
+.idea
+net/Test.java
+.classpath
+.DS_Store

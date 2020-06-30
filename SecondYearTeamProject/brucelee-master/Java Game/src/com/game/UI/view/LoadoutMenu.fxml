@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane onMouseEntered="#init" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #000033;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.game.UI.view.LoadoutMenu">
+   <children>
+      <Pane layoutX="660.0" layoutY="340.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="218.0" prefWidth="601.0">
+               <children>
+                  <GridPane prefHeight="218.0" prefWidth="604.0" HBox.hgrow="ALWAYS">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="273.0" minHeight="10.0" prefHeight="178.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="143.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="rl_dec" mnemonicParsing="false" onAction="#dec_rl" prefHeight="25.0" prefWidth="30.0" text="-">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                              <Button fx:id="rl_inc" mnemonicParsing="false" onAction="#inc_rl" prefHeight="25.0" prefWidth="30.0" text="+">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="sr_dec" mnemonicParsing="false" onAction="#dec_sr" prefHeight="25.0" prefWidth="30.0" text="-">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                              <Button fx:id="sr_inc" mnemonicParsing="false" onAction="#inc_sr" prefHeight="25.0" prefWidth="30.0" text="+">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="cl_dec" mnemonicParsing="false" onAction="#dec_cl" prefHeight="25.0" prefWidth="30.0" text="-">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                              <Button fx:id="cl_inc" mnemonicParsing="false" onAction="#inc_cl" prefHeight="25.0" prefWidth="30.0" text="+">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="tg_dec" mnemonicParsing="false" onAction="#dec_tg" prefHeight="25.0" prefWidth="30.0" text="-">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                              <Button fx:id="tg_inc" mnemonicParsing="false" onAction="#inc_tg" prefHeight="25.0" prefWidth="30.0" text="+">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="gl_dec" mnemonicParsing="false" onAction="#dec_gl" prefHeight="25.0" prefWidth="30.0" text="-">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                              <Button fx:id="gl_inc" mnemonicParsing="false" onAction="#inc_gl" prefHeight="25.0" prefWidth="30.0" text="+">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="gg_dec" mnemonicParsing="false" onAction="#dec_gg" prefHeight="25.0" prefWidth="30.0" text="-">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                              <Button fx:id="gg_inc" mnemonicParsing="false" onAction="#inc_gg" prefHeight="25.0" prefWidth="30.0" text="+">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="pg_dec" mnemonicParsing="false" onAction="#dec_pg" prefHeight="25.0" prefWidth="30.0" text="-">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                              <Button fx:id="pg_inc" mnemonicParsing="false" onAction="#inc_pg" prefHeight="25.0" prefWidth="30.0" text="+">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="dl_dec" mnemonicParsing="false" onAction="#dec_dl" prefHeight="25.0" prefWidth="30.0" text="-">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                              <Button fx:id="dl_inc" mnemonicParsing="false" onAction="#inc_dl" prefHeight="25.0" prefWidth="30.0" text="+">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="158.0" prefWidth="63.0">
+                           <children>
+                              <Label prefHeight="52.0" prefWidth="59.0" text="Rocket" textFill="WHITE" textOverrun="CLIP" wrapText="true" />
+                              <Label text="Launcher" textFill="WHITE" />
+                              <Label fx:id="cost1" text="cost" textFill="WHITE" />
+                              <ImageView fitHeight="141.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../res/images/weapons/rocket_launcher_icon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" top="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="ammo1" prefHeight="17.0" prefWidth="63.0" text="00" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="23.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="158.0" prefWidth="63.0" GridPane.columnIndex="1">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="59.0" text="Sniper" textFill="WHITE" />
+                              <Label text="Rifle" textFill="WHITE" />
+                              <Label fx:id="cost2" text="cost" textFill="WHITE" />
+                              <ImageView fitHeight="141.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../res/images/weapons/sniper_icon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" top="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="ammo2" prefHeight="17.0" prefWidth="63.0" text="00" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="23.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="158.0" prefWidth="63.0" GridPane.columnIndex="2">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="59.0" text="Grenade" textFill="WHITE" />
+                              <Label text="Launcher" textFill="WHITE" />
+                              <Label fx:id="cost3" text="cost" textFill="WHITE" />
+                              <ImageView fitHeight="141.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../res/images/weapons/grenade_launcher_icon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" top="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="ammo3" prefHeight="17.0" prefWidth="63.0" text="00" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="23.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="158.0" prefWidth="63.0" GridPane.columnIndex="3">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="59.0" text="Teleport" textFill="WHITE" />
+                              <Label text="Gun" textFill="WHITE" />
+                              <Label fx:id="cost4" text="cost" textFill="WHITE" />
+                              <ImageView fitHeight="141.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../res/images/weapons/teleporter_icon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" top="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="ammo4" prefHeight="17.0" prefWidth="63.0" text="00" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="23.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="158.0" prefWidth="63.0" GridPane.columnIndex="4">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="59.0" text="Cluster" textFill="WHITE" />
+                              <Label text="Launcher" textFill="WHITE" />
+                              <Label fx:id="cost5" text="cost" textFill="WHITE" />
+                              <ImageView fitHeight="141.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../res/images/weapons/cluster_launcher_icon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" top="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="ammo5" prefHeight="17.0" prefWidth="63.0" text="00" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="23.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="158.0" prefWidth="63.0" GridPane.columnIndex="5">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="59.0" text="Gravity" textFill="WHITE" />
+                              <Label text="Gun" textFill="WHITE" />
+                              <Label fx:id="cost6" text="cost" textFill="WHITE" />
+                              <ImageView fitHeight="141.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../res/images/weapons/gravity_gun_icon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" top="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="ammo6" prefHeight="17.0" prefWidth="63.0" text="00" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="23.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="158.0" prefWidth="63.0" GridPane.columnIndex="6">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="59.0" text="Phase" textFill="WHITE" />
+                              <Label text="Gun" textFill="WHITE" />
+                              <Label fx:id="cost7" text="cost" textFill="WHITE" />
+                              <ImageView fitHeight="141.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../res/images/weapons/phase_gun_icon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" top="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="ammo7" prefHeight="17.0" prefWidth="63.0" text="00" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="23.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="158.0" prefWidth="63.0" GridPane.columnIndex="7">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="59.0" text="Drill" textFill="WHITE" />
+                              <Label text="Launcher" textFill="WHITE" />
+                              <Label fx:id="cost8" text="cost" textFill="WHITE" />
+                              <ImageView fitHeight="141.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../res/images/weapons/drill_launcher_icon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" top="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="ammo8" text="00" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="23.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="158.0" prefWidth="63.0" GridPane.columnIndex="8">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="59.0" text="Speed" textFill="WHITE" />
+                              <Label text="Launcher" textFill="WHITE" />
+                              <Label fx:id="cost9" text="cost" textFill="WHITE" />
+                              <ImageView fitHeight="141.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../res/images/weapons/speed_launcher_icon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" top="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="ammo9" text="00" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="23.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="sl_dec" mnemonicParsing="false" onAction="#dec_sl" prefHeight="25.0" prefWidth="30.0" text="-">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="sl_inc" mnemonicParsing="false" onAction="#inc_sl" prefHeight="25.0" prefWidth="30.0" text="+">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin></Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <Button fx:id="back" layoutX="14.0" layoutY="353.0" mnemonicParsing="false" onAction="#goMainMenu" text="Back" />
+            <Button fx:id="confirm" layoutX="520.0" layoutY="353.0" mnemonicParsing="false" onAction="#handlePlayButton" text="Confirm" />
+            <Label layoutX="300.0" layoutY="326.0" prefHeight="27.0" prefWidth="142.0" text="Points Remaining:" textAlignment="CENTER" textFill="WHITE" />
+            <HBox layoutX="400.0" layoutY="247.0" prefHeight="25.0" prefWidth="49.0">
+               <children>
+                  <Button fx:id="hp_dec" mnemonicParsing="false" onAction="#decHP" prefHeight="44.0" prefWidth="25.0" text="-" />
+                  <Button fx:id="hp_inc" mnemonicParsing="false" onAction="#incHP" prefHeight="27.0" prefWidth="25.0" text="+" />
+               </children>
+            </HBox>
+            <HBox layoutX="400.0" layoutY="276.0" prefHeight="25.0" prefWidth="49.0">
+               <children>
+                  <Button fx:id="en_dec" mnemonicParsing="false" onAction="#decEnergy" prefHeight="44.0" prefWidth="25.0" text="-" />
+                  <Button fx:id="en_inc" mnemonicParsing="false" onAction="#incEnergy" prefHeight="55.0" prefWidth="25.0" text="+" />
+               </children>
+            </HBox>
+            <Label layoutX="263.0" layoutY="247.0" prefHeight="27.0" prefWidth="92.0" text="Starting HP:" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="294.0" layoutY="276.0" prefHeight="27.0" prefWidth="62.0" text="Energy:" textAlignment="CENTER" textFill="WHITE" />
+            <Label fx:id="hp" layoutX="355.0" layoutY="247.0" prefHeight="27.0" prefWidth="42.0" text="100" textFill="WHITE" />
+            <Label fx:id="energy" layoutX="355.0" layoutY="276.0" prefHeight="27.0" prefWidth="42.0" text="000" textFill="WHITE" />
+            <Label fx:id="points" layoutX="412.0" layoutY="326.0" prefHeight="27.0" prefWidth="42.0" text="00" textFill="WHITE" />
+            <VBox layoutX="153.0" layoutY="226.0" maxWidth="150.0" minWidth="103.0" prefHeight="152.0" prefWidth="104.0">
+               <children>
+                  <ImageView fitHeight="155.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../res/images/legends/ldout.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="7.0" left="10.0" top="3.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <HBox maxWidth="150.0" minWidth="103.0" prefHeight="42.0" prefWidth="104.0">
+                     <children>
+                        <ToggleButton fx:id="robot1" minWidth="34.0" mnemonicParsing="false" onAction="#r1" text="1" />
+                        <ToggleButton fx:id="robot2" minWidth="34.0" mnemonicParsing="false" onAction="#r2" text="2" />
+                        <ToggleButton fx:id="robot3" minWidth="34.0" mnemonicParsing="false" onAction="#r3" text="3" />
+                     </children>
+                     <padding>
+                        <Insets left="1.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label fx:id="costhp" layoutX="467.0" layoutY="252.0" text="cost" textFill="WHITE" />
+            <Label fx:id="costenergy" layoutX="467.0" layoutY="281.0" text="cost" textFill="WHITE" />
+         </children>
+      </Pane>
+      <ImageView fx:id="m_GameStill" fitHeight="204.0" fitWidth="1000.0" layoutX="494.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@solar_legends.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

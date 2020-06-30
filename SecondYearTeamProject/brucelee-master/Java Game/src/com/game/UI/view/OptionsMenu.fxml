@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #000033;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.game.UI.view.OptionsController">
+   <children>
+      <Label layoutX="845.0" layoutY="337.0" text="Volume Control:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="204.0" fitWidth="1000.0" layoutX="460.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="460.0" AnchorPane.rightAnchor="460.0" AnchorPane.topAnchor="117.0">
+         <image>
+            <Image url="@solar_legends.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="volumeSlider" layoutX="872.0" layoutY="428.0" prefHeight="14.0" prefWidth="200.0" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="871.0" />
+      <Label layoutX="855.0" layoutY="407.0" text="Mute" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1054.0" layoutY="407.0" text="100%" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="781.0" layoutY="518.0" text="Random Gravity Enabled:" textFill="WHITE" AnchorPane.leftAnchor="781.0" AnchorPane.rightAnchor="781.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="gravityBox" graphicTextGap="0.0" layoutX="961.0" layoutY="588.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="21.0" AnchorPane.leftAnchor="961.0" AnchorPane.rightAnchor="961.0" />
+      <Label layoutX="871.0" layoutY="639.0" prefHeight="45.0" prefWidth="223.0" text="A.I. Difficulty:" textFill="WHITE" AnchorPane.leftAnchor="871.0" AnchorPane.rightAnchor="849.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="difficultyMenu" layoutX="897.0" layoutY="718.0" prefWidth="150.0" AnchorPane.leftAnchor="897.0" AnchorPane.rightAnchor="896.0" />
+      <Label layoutX="781.0" layoutY="563.0" prefHeight="21.0" prefWidth="381.0" text="(Applies when hosting a game or playing singleplayer)" textFill="WHITE" AnchorPane.leftAnchor="781.0" AnchorPane.rightAnchor="781.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnToMenu" layoutX="907.0" layoutY="851.0" mnemonicParsing="false" onAction="#goMainMenu" text="Return to Main Menu" AnchorPane.leftAnchor="907.0" AnchorPane.rightAnchor="906.0" />
+   </children>
+</AnchorPane>

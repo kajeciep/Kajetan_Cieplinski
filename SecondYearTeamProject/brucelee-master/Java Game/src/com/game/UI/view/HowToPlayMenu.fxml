@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #1F1B6D;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.game.UI.view.MenuController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutY="-86.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-86.0">
+         <image>
+            <Image url="@../../../../res/images/how_to_play.png" />
+         </image></ImageView>
+      <Button fx:id="htp_Return" layoutX="276.0" layoutY="905.0" mnemonicParsing="false" onAction="#goMainMenu" prefHeight="62.0" prefWidth="225.0" text="Return to Main Menu">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
